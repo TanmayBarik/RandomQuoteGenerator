@@ -1,0 +1,85 @@
+:root{
+    --DarkBlack:#0d2b45;
+    --LightBlack:#203c56;
+
+    --DarkViolet:#544e68;
+    --LightViolet:#8d697a;
+
+    --DarkOrange:#d08159;
+    --LightOrange:#ffaa5e;
+    --LighterOrange:#ffd4a3;
+    --Skin:#ffecd6;
+}
+
+@font-face {
+    font-family: GoldLeaf;
+    src: url(GoldLeaf.ttf);
+}
+
+* {
+    font-family: GoldLeaf;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;    
+}
+
+#library-img {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index:-1;
+
+    height: 100%;
+    width: 100%;
+
+    opacity:0.6;
+}
+
+#Heading-div{
+    background-color: var(--DarkBlack);
+    border:2px solid var(--Skin);
+    color:var(--Skin);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Quote-Container{
+    background-color: var(--LighterOrange);
+    color:var(--Skin);
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 10px 5px var(--LightBlack);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#Quote-text-p{
+    background-color: var(--LightBlack);
+    color:var(--Skin);
+
+    padding:10px;
+}
+
+#Quote-Person-p{
+    background-color: var(--LightOrange);
+    color:var(--LightViolet);
+
+    font-weight: bolder;
+    padding: 3px 7px;
+}
+
+#Quote-New-btn{
+    background-color: var(--LightViolet);
+    color:var(--Skin);
+
+    margin-bottom: 10px;
+    font-size: medium;
+}
